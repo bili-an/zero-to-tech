@@ -6,7 +6,7 @@
 // 后端地址从 NEXT_PUBLIC_API_BASE_URL 读取（默认 http://localhost:8000）；
 // .env.local 必须放在项目根目录，Next.js 才会加载，backend/ 下的那份前端读不到。
 import { useState } from "react";
-const API = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
+const API = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 
 export default function InputCard({ onResult }) {
